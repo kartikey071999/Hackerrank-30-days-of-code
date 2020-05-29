@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int t,a,i;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a;
+        for(i =2;i*i <= a;i++)
+        {
+            if(!(a%i))
+               break;
+        }
+        if(a == 1)
+            i = 0;
+        if(i*i > a)
+            cout<<"Prime"<<endl;
+        else
+            cout<<"Not prime"<<endl;
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
